@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Interview Mastery - Interactive Tutorial</title>
+    <title>Python Interview Mastery - Complete Guide</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>🐍 Python Interview Mastery</h1>
-            <p>Master Python concepts with interactive tutorials, quizzes, and coding challenges</p>
+            <p>Comprehensive Python tutorial with 100+ interview questions and step-by-step learning</p>
         </div>
 
         <div class="nav-tabs">
@@ -20,11 +20,34 @@
             <button class="nav-tab" onclick="showSection('advanced')">Advanced Topics</button>
             <button class="nav-tab" onclick="showSection('algorithms')">Algorithms</button>
             <button class="nav-tab" onclick="showSection('challenges')">Coding Challenges</button>
+            <button class="nav-tab" onclick="showSection('interviewqa')">Interview Q&A</button>
             <button class="nav-tab" onclick="showSection('progress')">Your Progress</button>
+        </div>
+
+        <!-- Page indicator and navigation -->
+        <div id="page-navigation" class="page-navigation">
+            <button id="prev-btn" class="nav-btn" onclick="navigatePage('prev')">
+                ← Previous
+            </button>
+            <span id="page-indicator" class="page-indicator">Page 1 of 1</span>
+            <button id="next-btn" class="nav-btn" onclick="navigatePage('next')">
+                Next →
+            </button>
         </div>
 
         <div class="content" id="mainContent">
             <!-- Content will be loaded dynamically -->
+        </div>
+
+        <!-- Bottom navigation (duplicate for convenience) -->
+        <div id="page-navigation-bottom" class="page-navigation page-navigation-bottom">
+            <button id="prev-btn-bottom" class="nav-btn" onclick="navigatePage('prev')">
+                ← Previous
+            </button>
+            <span id="page-indicator-bottom" class="page-indicator">Page 1 of 1</span>
+            <button id="next-btn-bottom" class="nav-btn" onclick="navigatePage('next')">
+                Next →
+            </button>
         </div>
     </div>
 
